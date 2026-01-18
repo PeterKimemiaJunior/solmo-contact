@@ -1,0 +1,91 @@
+:root {
+  --dark-blue: #1f2433;
+  --blue: #2e3f54;
+  --orange: #f28c28;
+  --white: #ffffff;
+  --gray: #cfd3dc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: linear-gradient(180deg, var(--dark-blue), #121622);
+  color: var(--white);
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.logo {
+  width: 130px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+
+.slogan {
+  color: var(--gray);
+  margin-bottom: 35px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--white);
+  background: var(--blue);
+  transition: transform 0.2s, background 0.2s;
+}
+
+.link i {
+  font-size: 20px;
+}
+
+.link span {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.link:hover {
+  transform: translateY(-2px);
+  background: var(--orange);
+  color: #111;
+}
+
+/* Cores específicas opcionais */
+.facebook {
+}
+
+.instagram {
+}
+
+.whatsapp {
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 14px;
+  color: var(--gray);
+}
